@@ -45,9 +45,29 @@ input::placeholder {
 
 button {
   background-color: #61dafb;
-  width: 200px;
+  width: 400px;
   border-radius: 1em;
   font-weight: bolder;
   height: 30px;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.order {
+  text-align: left;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }

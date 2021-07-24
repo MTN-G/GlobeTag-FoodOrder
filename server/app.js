@@ -54,7 +54,7 @@ app.post("/append", async (req, res) => {
 app.get("/document", async (req, res) => {
   const fileName = await fileExist();
   fs.readFile(fileName, "utf8").then((value) => {
-    res.send(value.split("\n-----------------------"));
+    res.send(value.split("-----------------------"));
   });
 });
 

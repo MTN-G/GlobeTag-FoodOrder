@@ -53,14 +53,14 @@ function Form() {
         <div>
           {update ? (
             <div>
-              for new order{" "}
+              For new order{" "}
               <b onClick={() => setUpdate(false)} className={"updateLink"}>
                 click here.
               </b>
             </div>
           ) : (
             <div>
-              hey, please enter your lunch order in the fields below. <br />
+              Hey, please enter your lunch order in the fields below. <br />
               If you have already ordered{" "}
               <b onClick={() => setUpdate(true)} className={"updateLink"}>
                 click here for updating.
