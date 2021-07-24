@@ -5,6 +5,9 @@ const app = express();
 
 app.use(express.json());
 
+// serve the static files
+app.use(express.static(`${__dirname}/../client/build`));
+
 const dirPath = "./files/";
 
 // create new file function
@@ -51,6 +54,7 @@ app.post("/append", async (req, res) => {
   }
 });
 
+// send an array of orders to the client from the .txt file
 app.get("/document", async (req, res) => {
   const fileName = await fileExist();
   fs.readFile(fileName, "utf8").then((value) => {
