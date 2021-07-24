@@ -1,4 +1,5 @@
 import "./App.css";
+import Document from "./components/document";
 import Form from "./components/form";
 import Logo from "./components/logo";
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Logo />
       <Form />
+      <Document />
       <Logo />
     </div>
   );

@@ -51,6 +51,13 @@ app.post("/append", async (req, res) => {
   }
 });
 
+app.get("/document", async (req, res) => {
+  const fileName = await fileExist();
+  fs.readFile(fileName, "utf8").then((value) => {
+    res.send(value.split("\n-----------------------"));
+  });
+});
+
 // get the names of those who ordered already
 app.get("/names", async (req, res) => {
   const fileName = await fileExist();
